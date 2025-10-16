@@ -28,3 +28,38 @@ Interactive analysis and modeling of **Patient Survey Star Rating (1–5)** usin
 Python • pandas • scikit-learn • matplotlib • (optional) Streamlit/Altair/Plotly
 
 ## 🗂️ Repository Structure
+├─ notebooks/ # EDA & modeling (no raw data in Git)
+├─ src/ # data loaders, cleaning, features, utils
+├─ reports/ # exported charts/figures for README/briefs
+├─ data/ # (empty in Git; keep real data external)
+├─ requirements.txt
+└─ README.md
+
+## 📊 Data Sources
+- **CMS Hospital General Information**
+- **HCAHPS (Hospital Consumer Assessment of Healthcare Providers and Systems)**  
+Links referenced in docs/notebooks. Download and store locally (outside Git).
+
+## 🧹 Data Prep & QA (high-level)
+- Type coercion, deduplication, standardized hospital identifiers
+- Missingness scan & imputation rationale
+- Range/outlier checks for star ratings and key drivers
+
+## 🤖 Modeling
+- **Target:** Patient Survey Star Rating (1–5)
+- **Models:** Linear Regression, Random Forest Regressor, Gradient Boosting Regressor
+- **Validation:** train/validation split (or cross-validation); residual diagnostics (linearity, normality, heteroscedasticity)
+- **Explainability:** global feature importance; error analysis by ownership type; partial dependency / what-if views
+
+## 📈 Results (replace with your actual numbers)
+- Baseline metrics: RMSE / MAE
+- Lift from tree-based models vs. linear baseline
+- Key drivers (e.g., ownership type, region dummies, emergency services)
+- What-if scenarios: estimated rating changes under different ownership/emergency-service combinations
+
+## 🧪 Reproduce Locally
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+jupyter lab
+# open notebooks/01_eda.ipynb then notebooks/02_modeling.ipynb
