@@ -46,8 +46,6 @@ An interactive Tableau dashboard exploring **Patient Survey Star Rating (1–5)*
 - **Derived fields:** region (from state), ownership groupings, rating bins.
 - **Output:** clean extract published to the packaged workbook.
 
-*(Include/replace with your exact steps from Prep if needed.)*
-
 ## 📈 Dashboard Contents
 - **Overview:** KPI tiles (avg star rating, # hospitals), trend/summary.
 - **Map by State/Region:** choropleth with tooltip details and drill-through.
@@ -68,11 +66,9 @@ An interactive Tableau dashboard exploring **Patient Survey Star Rating (1–5)*
 - **Emergency Services (Bool)**  
   `IF LOWER([Emergency Services]) = "yes" THEN TRUE ELSE FALSE END`
 
-*(Use your actual field names.)*
-
 ## ✅ How to Open
 1. Download `workbook/hcahps_patient_experience.twbx`.
-2. Double-click to open in **Tableau Desktop** (vYYYY.x or newer).
+2. Double-click to open in **Tableau Desktop**.
 3. If extracts are stale, click **Data → Refresh All Extracts**.
 
 ## 🧭 Usage Notes for Stakeholders
@@ -80,19 +76,13 @@ An interactive Tableau dashboard exploring **Patient Survey Star Rating (1–5)*
 - Hover over points/bars for detail; select bars or map areas to cross-filter.
 - The **What-if** panel helps compare ownership categories side-by-side.
 
-## 📜 Data Dictionary (see `docs/data_dictionary.md`)
+## 📜 Data Dictionary 
 - Field names, definitions, allowed values, and any transformations applied.
 
 ## 🔐 Governance
 - No PHI/PII or credentials in the repo.
 - Raw CMS dumps are kept off-repo (secure storage).
 - GitHub issues track enhancements/bugs; versions tagged by release.
-
-## 🚀 Roadmap
-- [ ] Add text table for top/bottom hospitals per state
-- [ ] Publish to Tableau Public / Tableau Server for sharing
-- [ ] Add a “Definitions” tooltip and data quality banner
-- [ ] Add parameterized benchmarks vs. national/state averages
 
 ## 📄 License
 MIT (for this workbook and documentation; data remains property of CMS/public sources)
