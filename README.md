@@ -16,22 +16,7 @@ An interactive Tableau dashboard exploring **Patient Survey Star Rating (1–5)*
 - **Tableau Desktop** (dashboard authoring)
 - **Tableau Prep** (data cleaning, joins, calculated fields)
 - (Optional) Excel/CSV as source files
-
-## 📂 Repository Structure
-├─ workbook/
-│ └─ hcahps_patient_experience.twbx # Tableau Packaged Workbook (recommended)
-├─ prep-flows/
-│ └─ hcahps_cms_cleaning.tfl # Tableau Prep Flow
-├─ docs/
-│ ├─ screenshots/
-│ │ ├─ overview.png
-│ │ ├─ state_map.png
-│ │ └─ ownership_comparison.png
-│ └─ data_dictionary.md
-├─ data-samples/ # optional tiny, synthetic samples only
-│ └─ README_keep_data_out.md
-└─ README.md 
-
+  
 > Save your **Tableau workbook as `.twbx`** so the visualizations open with embedded extracts (no local paths required). Keep real/raw CMS exports **outside** Git.
 
 ## 📊 Data Sources
@@ -89,3 +74,15 @@ MIT (for this workbook and documentation; data remains property of CMS/public so
 
 ## 🙌 Acknowledgments
 Thanks to CMS for public datasets and reviewers for dashboard feedback.
+
+## References
+
+Centers for Medicare & Medicaid Services. (n.d.). *Hospital General Information* [Data set]. U.S. Department of Health & Human Services. https://<exact-link-you-used>
+
+Centers for Medicare & Medicaid Services. (2025). *HCAHPS – Patient Survey Star Ratings* [Data set]. U.S. Department of Health & Human Services. https://<exact-link-you-used>
+
+Boyce, D. (n.d.). *Typography and dashboards in Tableau* [Class handout]. ADTA 5250, University of North Texas.
+
+Centers for Medicare & Medicaid Services. (Year). *Centers for Medicare and Medicaid Services logo* [Logo]. Wikimedia Commons. https://<logo-page-url>
+License: <CC BY/CC BY-SA/etc.> — provide the license name, link, original author/uploader, and note if you made any changes.
+
