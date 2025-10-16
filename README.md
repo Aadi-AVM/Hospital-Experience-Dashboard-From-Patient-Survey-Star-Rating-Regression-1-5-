@@ -83,6 +83,5 @@ Centers for Medicare & Medicaid Services. (2025). *HCAHPS – Patient Survey Sta
 
 Boyce, D. (n.d.). *Typography and dashboards in Tableau* [Class handout]. ADTA 5250, University of North Texas.
 
-Centers for Medicare & Medicaid Services. (Year). *Centers for Medicare and Medicaid Services logo* [Logo]. Wikimedia Commons. https://<logo-page-url>
-License: <CC BY/CC BY-SA/etc.> — provide the license name, link, original author/uploader, and note if you made any changes.
+Centers for Medicare & Medicaid Services. (Year). *Centers for Medicare and Medicaid Services logo* [Logo]. Wikimedia Commons.
 
